@@ -1,0 +1,15 @@
+{
+  "app_title": "Titre",
+  "language": "Langue",
+  "Home":"Accueil",
+  "welcome_message": "Bienvenue",
+  "Complaints":"Plaintes",
+  "Services":"Services",
+  "About":" Àpropos ",
+  "Add New Service":"Ajouter un nouveau service",
+  "Login":" Connexion",
+  "Logout":" Se déconnecter",
+  "Enter Service Name":"Entrez le nom du service",
+  "pargraph":"Au vu du principe de transparence et d'écoute de l'opinion publique, notamment en ce qui concerne les services publics et les secteurs de services qui suivent la commune de Tajoura sur celle-ci, nous vous donnons la possibilité d'exprimer votre avis et de voir tout ce qui est nouveau et venant de la commune dans ce champ.",
+  "days_since_release": "ça fait {{number_of_days}} jours depuis la sortie de cette vidéo"
+}

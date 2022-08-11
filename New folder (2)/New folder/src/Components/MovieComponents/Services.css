@@ -1,0 +1,66 @@
+.bigdiv {
+  background-color: rgb(225, 228, 227);
+}
+.moviediv {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding-top: 2%;
+  margin: 0 9%;
+  flex-wrap: wrap;
+}
+.carddiv {
+  width: 950px;
+  display: flex;
+  align-items: center;
+}
+.Card {
+  background-color: rgb(38, 38, 38) !important;
+  color: white;
+}
+.Cardcontain {
+  margin: 1%;
+}
+.detailsdiv {
+  border-radius: 6px;
+  margin-top: 5%;
+  padding-bottom: 3%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.pardiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.pargraph1 {
+  display: flex;
+  justify-content: center;
+  margin-left: 30%;
+}
+.rate-name {
+  padding: 4%;
+  margin: 2%;
+}
+.button-rate {
+  padding-top: 4%;
+  padding-bottom: 1%;
+}
+.forms {
+  width: 1700px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.complaint {
+  height: 200px;
+}
+.shakwa {
+  width: 600px;
+}
+.email {
+  width: 500px;
+}

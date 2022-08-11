@@ -1,0 +1,14 @@
+{
+  "app_title": "Title",
+  "language": "Language",
+  "Home":"Home",
+  "welcome_message": "Welcome",
+  "Complaints":"Complaints",
+  "Services":"Services",
+  "About":"About",
+  "Login":"Login",
+  "Logout":"Logout ",
+  "pargraph":"In view of the principle of transparency and listening to public opinion, especially with regard to public services and service sectors that follow the municipality of Tajoura on it, we give you the opportunity to express your opinion and to see everything new and coming from the municipality in this field.",
+  "Enter Service Name":"Enter Service Name",
+  "days_since_release": "it's been {{number_of_days}} days since this video was released"
+}

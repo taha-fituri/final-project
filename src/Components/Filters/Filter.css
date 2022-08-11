@@ -1,0 +1,7 @@
+.filter {
+  width: 500px;
+  display: flex;
+  padding-top: 1%;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}

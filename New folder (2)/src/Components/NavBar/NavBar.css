@@ -1,0 +1,19 @@
+.filterdiv {
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+  padding-right: 2%;
+  align-items: center;
+}
+
+.navLink {
+  color: #5f768e !important;
+  font-size: 20px;
+  margin: 0 5%;
+}
+
+.selectedLink {
+  color: #4066ef !important;
+  font-size: 20px;
+  margin: 0 5%;
+}

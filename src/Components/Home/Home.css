@@ -1,0 +1,16 @@
+.divs {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.home-partimer {
+  padding-top: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.countdiv {
+  width: 300px;
+}

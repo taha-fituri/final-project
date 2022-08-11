@@ -1,0 +1,24 @@
+.mainfooter {
+  background-color: #474244;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 3%;
+}
+.fa-brands {
+  font-size: xx-large !important;
+}
+.fa-twitter {
+  color: #1da1f2;
+}
+.fa-facebook {
+  color: #4867aa;
+}
+.fa-instagram-square {
+  color: #a92fbe;
+}
+.fa-linkedin {
+  color: #0077b5;
+}
