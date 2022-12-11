@@ -38,13 +38,25 @@ function NavBar({ serviceData, servicesfun, setIsAuth, isAuth }) {
   const currentLanguageCode = cookies.get("i18next") || "en";
   const currentLanguage = languages.find((l) => l.code === currentLanguageCode);
   const { t } = useTranslation();
+  let tokens = localStorage.getItem("token");
+  if (tokens) {
+    setIsAuth(true);
 
+    // console.log(isAuth);
+  }
   useEffect(() => {
     console.log("Setting page stuff");
     document.body.dir = currentLanguage.dir || "ltr";
     document.title = t("app_title");
   }, [currentLanguage, t]);
+  function click() {
 
+    // isAuth ?  : null;
+   if (isAuth) {
+    setIsAuth(false);
+    localStorage.removeItem("token")
+   }
+  }
   return (
     <Navbar fixed="top" className="color-nav" expand="lg">
       <Container fluid>
@@ -106,9 +118,10 @@ function NavBar({ serviceData, servicesfun, setIsAuth, isAuth }) {
                   <Button
                     style={{ marginTop: "9%" }}
                     variant="secondary"
-                    onClick={() => (isAuth ? setIsAuth(!isAuth) : null)}
+                    onClick={() => (click())}
                   >
                     {isAuth ? t("Logout") : t("Login")}
+
                   </Button>
                 </NavLink>
                 <div className="language-select">

@@ -21,14 +21,34 @@ const Login = ({ isAuth, setIsAuth }) => {
   const navigate = useNavigate();
 
   const LogIn = () => {
-    const objF = usersL.find((el) => el.email);
-    const objem = usersL.find((el) => el.password);
-    if (objF.password === passwordL && objem.email === userNameL) {
-      setIsAuth(!isAuth);
-      navigate("/");
-    } else {
-      alert("password incorrect");
-    }
+    fetch("http://localhost:8000/api/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ email: userNameL, password: passwordL }),
+    })
+      .then(async (response) => {
+        if (response.status === 200) {
+          const token = await response.json();
+          localStorage.setItem("token", token.token);
+          setIsAuth(true);
+          navigate("/");
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+
+    // console.log(r);
+    // const objF = usersL.find((el) => el.email);
+    // const objem = usersL.find((el) => el.password);
+    // // if (objF.password === passwordL && objem.email === userNameL) {
+    //   setIsAuth(!isAuth);
+    //   navigate("/");
+    // } else {
+    //   alert("password incorrect");
+    // }
   };
   return (
     <div>
